@@ -1,0 +1,471 @@
+/* --------------------------
+  Global Styles
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --------------------------
+  Header Styles
+---------------------------- */
+header{
+    background-image: linear-gradient(rgb(0, 0, 0,0.5), rgba(0, 0, 0, 0.5)),
+    url("coffee3.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+}
+/* make header text readable */
+header {
+    color: #fff;
+}
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* --------------------------
+  Navigation Menu
+---------------------------- */
+nav {
+    background-color: #8b5e3c; /* Medium coffee color */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #6f4e37;
+    transform: scale(1.05);
+}
+
+/* --------------------------
+  Container
+---------------------------- */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* --------------------------
+  Home Page Styles
+---------------------------- */
+.container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   ABOUT US PAGE STYLING
+========================= */
+
+/* Section Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Section Titles */
+.container h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #5a3e2b;
+    margin-bottom: 20px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.container h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background: #8b5e3c;
+    display: block;
+    margin: 10px auto;
+    border-radius: 3px;
+}
+
+/* Paragraph Styling */
+.container p {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* =========================
+   DESIGNER PROFILE
+========================= */
+
+.about {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Designer Image */
+.about img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #8b5e3c;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+/* Designer Text */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    color: #555;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 30px 0;
+}
+
+/* Service Cards */
+.container ul li {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    border-left: 5px solid #8b5e3c;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.container ul li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   MISSION & VISION CARDS
+========================= */
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #6f4e37;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px){
+
+.mission-vision{
+grid-template-columns:1fr;
+}
+
+.container ul{
+grid-template-columns:1fr;
+}
+
+}
+
+/* =====================
+   GALLERY PAGE
+===================== */
+
+.gallery-intro{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
+font-size:17px;
+color:#555;
+}
+
+/* Grid layout */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* Card */
+
+.gallery-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:transform 0.3s, box-shadow 0.3s;
+}
+
+/* Image */
+
+.gallery-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* Description */
+
+.gallery-card p{
+padding:15px;
+font-size:15px;
+color:#444;
+text-align:center;
+}
+
+/* Hover Effect */
+
+.gallery-card:hover{
+transform:translateY(-6px);
+box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Video section */
+
+.video-section{
+text-align:center;
+margin-top:40px;
+}
+
+.video-section video{
+width:50%;
+height: 250px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-text{
+margin-top:10px;
+font-size:15px;
+color:#555;
+}
+
+/* =====================
+   CONTACT PAGE DESIGN
+===================== */
+
+/* Page introduction */
+
+.contact-intro{
+text-align:center;
+max-width:750px;
+margin:auto;
+margin-bottom:40px;
+font-size:17px;
+line-height:1.6;
+color:#555;
+}
+
+/* Layout */
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:30px;
+}
+
+/* =====================
+   CONTACT FORM
+===================== */
+
+.contact-form{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form h3{
+margin-bottom:20px;
+color:#5a3e2b;
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+}
+
+.contact-form label{
+margin-top:12px;
+font-weight:600;
+color:#444;
+}
+
+.contact-form input,
+.contact-form textarea{
+margin-top:6px;
+padding:12px;
+border-radius:6px;
+border:1px solid #ddd;
+font-size:15px;
+transition:0.3s;
+}
+
+/* Input focus effect */
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:#8b5e3c;
+outline:none;
+box-shadow:0 0 5px rgba(139,94,60,0.3);
+}
+
+/* Button */
+
+.contact-form button{
+margin-top:20px;
+padding:12px;
+background:#8b5e3c;
+color:white;
+font-size:16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#6f4e37;
+transform:translateY(-2px);
+}
+
+/* =====================
+   CONTACT INFO CARD
+===================== */
+
+.contact-info{
+background:#ffffff;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h3{
+margin-bottom:20px;
+color:#5a3e2b;
+}
+
+.contact-info p{
+margin-bottom:15px;
+line-height:1.6;
+color:#444;
+}
+
+/* Icons */
+
+.contact-info i{
+color:#8b5e3c;
+margin-right:10px;
+font-size:18px;
+}
+
+/* =====================
+   SOCIAL MEDIA LINKS
+===================== */
+
+.social-links a{
+display:block;
+margin-bottom:10px;
+padding:8px;
+border-radius:5px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+.social-links a:hover{
+background:#f3f3f3;
+color:#8b5e3c;
+}
+
+/* =====================
+   GOOGLE MAP
+===================== */
+
+.map-section{
+margin-top:40px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+
+@media (max-width:768px){
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
